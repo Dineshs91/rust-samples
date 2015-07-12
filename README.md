@@ -84,6 +84,7 @@ println!("Filename is {}", filename);
 
 ### 4. Replace
 
+#### Replace a string with another string.
 ```rust
 let input = "Dust Docks";
    
