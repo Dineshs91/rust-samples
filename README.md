@@ -6,8 +6,9 @@ String manipulation examples in rust
 
 ```rust
 let input = "Get a = 10";
-    
-assert_eq!("Get", input.slice_chars(0, 3));
+
+// prints "Get"
+println!(input.slice_chars(0, 3));
 ```
 
 ### 2. Using split
@@ -22,7 +23,8 @@ let (protocol, host_port) = (url[0],  url[1]);
     
 let host_port: Vec<&str> = host_port.split(":").collect();
 let (host, port) = (host_port[0], host_port[1]);
-    
+
+// Prints "Protocol: https, Host: doc.rust-lang.com, Port: 80"
 println!("Protocol: {}, Host: {}, Port: {}", protocol, host, port);
 ```
 
@@ -34,6 +36,8 @@ let path = "/Users/Dinesh/documents/developer/rust/main.rs";
 let mut path: Vec<&str> = path.split("/").collect();
     
 let filename = path.pop().unwrap();
+
+// Prints "Filename is main.rs"
 println!("Filename is {}", filename);
 ```
 
@@ -45,6 +49,8 @@ let path = "/Users/Dinesh/documents/developer/rust/main.rs";
 let path: Vec<&str> = path.split("/").collect();
     
 let filename = path[path.len() - 1];
+
+// Prints "Filename is main.rs"
 println!("Filename is {}", filename);
 ```
 
@@ -58,5 +64,7 @@ let path = "/Users/Dinesh/documents/developer/rust/main.rs";
 let mut path = path.rsplit("/");
     
 let filename = path.next().unwrap();
+
+// Prints "Filename is main.rs"
 println!("Filename is {}", filename);
 ```
