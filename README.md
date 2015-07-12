@@ -28,7 +28,7 @@ let (host, port) = (host_port[0], host_port[1]);
 println!("Protocol: {}, Host: {}, Port: {}", protocol, host, port);
 ```
 
-#### Get the filename from the given path (Similar to basename command in *nix)
+#### Get the filename from the given path (similar to basename command in *nix)
 
 ```rust
 let path = "/Users/Dinesh/documents/developer/rust/main.rs";
@@ -41,7 +41,7 @@ let filename = path.pop().unwrap();
 println!("Filename is {}", filename);
 ```
 
-#### Without mutable variable
+#### Get the filename from the given path (without mutable variable)
 
 ```rust
 let path = "/Users/Dinesh/documents/developer/rust/main.rs";
