@@ -11,7 +11,7 @@ let input = "Get a = 10";
 println!(input.slice_chars(0, 3));
 ```
 
-### 2. Using split
+### 2. split
 
 #### Get the protocol, host and port from a url.
 
@@ -54,7 +54,7 @@ let filename = path[path.len() - 1];
 println!("Filename is {}", filename);
 ```
 
-### 3. Using rsplit
+### 3. rsplit
 
 #### Get the filename from the given path (Similar to basename command in *nix)
 
@@ -67,4 +67,15 @@ let filename = path.next().unwrap();
 
 // Prints "Filename is main.rs"
 println!("Filename is {}", filename);
+```
+
+### 4. Replace
+
+```rust
+let input = "Dust Docks";
+   
+let input = input.replace("D", "R");
+
+// Prints "Rust Rocks"
+println!("{}", input);
 ```
