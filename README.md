@@ -54,6 +54,19 @@ let filename = path[path.len() - 1];
 println!("Filename is {}", filename);
 ```
 
+#### Two values are given as a string, find their sum. 
+
+```rust
+let input = "10 20";
+
+let input: Vec<i32> = input.split(" ").map(|no| no.parse::<i32>().unwrap()).collect();
+let a = input[0];
+let b = input[1];
+   
+// Prints "The sum of 10 and 20 is 30"
+println!("The sum of {} and {} is {}", a, b, a + b);
+```
+
 ### 3. rsplit
 
 #### Get the filename from the given path (Similar to basename command in *nix)
