@@ -47,3 +47,16 @@ let path: Vec<&str> = path.split("/").collect();
 let filename = path[path.len() - 1];
 println!("Filename is {}", filename);
 ```
+
+### 3. Using rsplit
+
+#### Get the filename from the given path (Similar to basename command in *nix)
+
+```rust
+let path = "/Users/Dinesh/documents/developer/rust/main.rs";
+    
+let mut path = path.rsplit("/");
+    
+let filename = path.next().unwrap();
+println!("Filename is {}", filename);
+```
