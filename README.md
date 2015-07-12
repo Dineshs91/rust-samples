@@ -16,6 +16,7 @@ Find the protocol, host and port from a url.
 
 ```rust
 let url = "https://doc.rust-lang.com:80";
+
 let url: Vec<&str> = url.split("://").collect();
 let (protocol, host_port) = (url[0],  url[1]);
     
