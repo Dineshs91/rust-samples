@@ -93,3 +93,18 @@ let input = input.replace("D", "R");
 // Prints "Rust Rocks"
 println!("{}", input);
 ```
+
+### 5. Starts_with
+
+#### Find if the link is secure or not
+
+```rust
+let url = "https:\\doc.rust-lang.org";
+    
+// Prints "The link is secure"
+if url.starts_with("https") {
+    println!("The link is secure");
+} else if url.starts_with("http") {
+    println!("The link is unsecure");
+}
+```
