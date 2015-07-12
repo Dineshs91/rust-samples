@@ -69,7 +69,7 @@ println!("The sum of {} and {} is {}", a, b, a + b);
 
 ### 3. rsplit
 
-#### Get the filename from the given path (Similar to basename command in *nix)
+#### Get the filename from the given path (similar to basename command in *nix)
 
 ```rust
 let path = "/Users/Dinesh/documents/developer/rust/main.rs";
